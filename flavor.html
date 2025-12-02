@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Flavors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe8cc;
+        }
+
+        header {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .welcome {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #ff9999;
+            color: white;
+        }
+
+        .flavors {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .flavor {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .flavor:hover {
+            transform: translateY(-10px);
+        }
+
+        .flavor img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .flavor h2 {
+            margin: 15px;
+            color: #ff4d4d;
+        }
+
+        .flavor p {
+            margin: 0 15px 15px;
+            color: #666;
+        }
+
+        .flavor button {
+            display: block;
+            margin: 10px auto 10px;
+            padding: 10px 20px;
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .flavor button:hover {
+            background-color: #d43d3d;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #444;
+            color: white;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Ice Cream Wonderland</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="flavor.html">Menu</a></li>
+                    <li><a href="login.php">Login</a></li>
+                    <li><a href="signup.php">Signup</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="welcome">
+            <h2>Welcome to Ice Cream Wonderland!</h2>
+            <p>Explore Our Delicious Flavors</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="flavors">
+            <div class="flavor">
+                <img src="images/vanilla.jpg" alt="Vanilla Ice Cream" onclick="location.href='order.html'">
+                <h2>Vanilla</h2>
+                <p>A classic, creamy delight made from real vanilla beans.</p>
+                <button onclick="location.href='order.html'">Order Now</button>
+                <button onclick="location.href='review.html'">Ratings</button>
+            </div>
+
+            <div class="flavor">
+                <img src="images/choco.jpg" alt="Chocolate Ice Cream" onclick="location.href='order.html'">
+                <h2>Chocolate</h2>
+                <p>Rich, smooth, and irresistibly chocolaty.</p>
+                <button onclick="location.href='order.html'">Order Now</button>
+                <button onclick="location.href='review.html'">Ratings</button>
+            </div>
+
+            <div class="flavor">
+                <img src="images/blueberry.jpg" alt="Blueberry Ice Cream" onclick="window.location.href='order.html';">
+                <h2>Blueberry</h2>
+                <p>Sweet and tangy blueberry-flavored ice cream.</p>
+                <button onclick="window.location.href='order.html';">Order Now</button>
+                <button onclick="window.location.href='review.html';">Ratings</button>
+            </div>
+
+            <div class="flavor">
+                <img src="images/strawberry.jpg" alt="Hazelnut Ice Cream" onclick="window.location.href='order.html';">
+                <h2>Strawberry</h2>
+                <p>A sweet and refreshing classic made with real, juicy strawberries.</p>
+                <button onclick="window.location.href='order.html';">Order Now</button>
+                <button onclick="window.location.href='review.html';">Ratings</button>
+            </div>
+
+            <div class="flavor">
+                <img src="images/pistachio.jpg" alt="Matcha Green Tea Ice Cream"
+                    onclick="window.location.href='order.html';">
+                <h2>Pistachio</h2>
+                <p>A creamy and nutty treat with the perfect hint of roasted pistachios.</p>
+                <button onclick="window.location.href='order.html';">Order Now</button>
+                <button onclick="window.location.href='review.html';">Ratings</button>
+            </div>
+
+            <div class="flavor">
+                <img src="images/mint.jpg" alt="Rocky Road Ice Cream" onclick="window.location.href='order.html';">
+                <h2>Mint</h2>
+                <p> Cool, refreshing, and perfectly paired with a hint of chocolate.</p>
+                <button onclick="window.location.href='order.html';">Order Now</button>
+                <button onclick="window.location.href='review.html';">Ratings</button>
+            </div>
+
+            <div class="flavor">
+                <img src="images/mango.jpg" alt="Blueberry Ice Cream" onclick="window.location.href='order.html';">
+                <h2>Mango</h2>
+                <p>A tropical delight bursting with the rich flavor of ripe mangoes.</p>
+                <button onclick="window.location.href='order.html';">Order Now</button>
+                <button onclick="window.location.href='review.html';">Ratings</button>
+            </div>
+
+            <div class="flavor">
+                <img src="images/cookie.jpg" alt="Hazelnut Ice Cream" onclick="window.location.href='order.html';">
+                <h2>Cookie</h2>
+                <p>Creamy hazelnut flavor with a rich, nutty taste.</p>
+                <button onclick="window.location.href='order.html';">Order Now</button>
+                <button onclick="window.location.href='review.html';">Ratings</button>
+            </div>
+
+            <div class="flavor">
+                <img src="images/caramel.jpg" alt="Matcha Green Tea Ice Cream"
+                    onclick="window.location.href='order.html';">
+                <h2>Caramel</h2>
+                <p>Smooth, buttery, and rich with the golden goodness of caramel.</p>
+                <button onclick="window.location.href='order.html';">Order Now</button>
+                <button onclick="window.location.href='review.html';">Ratings</button>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Visit Us For More Delicious Flavors! © 2025 Ice Cream Wonderland</p>
+    </footer>
+</body>
+
+</html>
